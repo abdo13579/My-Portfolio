@@ -1,79 +1,56 @@
-.nav{
-    position: sticky;
-    top: 0;
-    background-color: #004aad;
-    background-position: top center;
-    overflow: hidden;
-    white-space: nowrap
+:root {
+    --main-color: #004AAD;
+    --background-color: white;
+    --second-color: rgb(255, 204, 0, 1)
 }
-.logo{
-    width: 100px;
-    height: 100px;
-    padding-left: 10px;
+.Intro {
+    background-image: url(img/Backgroud.png);
+    background-size: cover;
+    direction: rtl;
 }
-.navLinkProject{
+.Title {
+    margin: 50px 0px;
+    text-align: center;
+    color: var(--second-color);
+    font-size: 93.1px;
+    font-family: "Tajawal", "arial";
+    text-shadow: 0px 4px 0.1px rgb(0 0 0 / 25%);
+    letter-spacing: 5px;
+}
+.TitleP {
+    margin: 110px 40px;
+    padding-right: 20px;
+    font-family: "Tajawal", "arial";
+    color: var(--second-color);
+    font-size: 48px;
+    line-height: 0.5;
+    font-weight: 600;
+    text-shadow: 0px 4px 0.1px rgb(0 0 0 / 25%);
+}
+.MainImg {
+    width: 35%;
     position: absolute;
-    top: 50px;
-    left: 20vw;
-    font-family: "Ubuntu","Arial";
+    top: 250px;
+    right: 800px;
 }
-.navLinkStore{
-    position: absolute;
-    top: 50px;
-    left: 45vw;
-    font-family: "Ubuntu","Arial";
+.KnowMore {
+    background-color: var(--second-color);
+    color: var(--main-color);
+    padding: 30px;
+    border: 50px 50px 50px 0px;
+    border-radius: 65px;
+    font-size: 48px;
+    font-family: "Tajawal", "arial";
+    font-weight: 500;
+    text-decoration: none;
+    margin: 20px;
+    display: inline-block;
+    position: relative;
+    right: 100px;
+    bottom: 50px;
+    cursor: pointer;
+    transition: all 0.3s linear;
 }
-.navLinkContactUs{
-    position: absolute;
-    top: 50px;
-    left: 65vw;
-    font-family: "Ubuntu","Arial";
-}
-.navLinkProject:hover,
-.navLinkStore:hover,
-.navLinkContactUs:hover {
-    transform: scale(1.2); 
-    color: #ffcc00;
-}
-.nav a {
-    text-decoration-line: none;
-    padding: 0px 20px;
-    font-size: 200%;
-    color: white;
-    transition: transform 0.6s ease, color 0.6s ease;
-}
-.intro {
-    background-color: #0886f4;
-    overflow: hidden;
-}
-.welcome{
-    font-family: "Ubuntu","Arial";
-    font-weight: 900;
-    padding-left: 20px;
-    padding-top: 20px;
-    font-size: 60px;
-    color: #ffcc00;
-}
-.myName{
-    font-family: "Arial";
-    font-weight: 900;
-    padding-left: 30px;
-    padding-top: 30px;
-    font-size: 250%;
-    color: #ffcc00;
-}
-.aboutMe{
-    font-family: "Arial";
-    font-weight: 900;
-    padding-left: 30px;
-    font-size: 150%;
-    color: #ffcc00;
-}
-.WebSoundsImg{
-    width: 30vw;
-    height: 30vw;
-}
-.project1 {
-    position: absolute;
-    top: 1vw;
+.KnowMore:hover {
+    transform: scale(1.03);
 }
