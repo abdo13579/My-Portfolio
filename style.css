@@ -4,7 +4,7 @@
     --second-color: rgb(255, 204, 0, 1)
 }
 .Intro {
-    background-image: url(img/Backgroud.png);
+    background-image: url(img/Background.pngs);
     background-size: cover;
     direction: rtl;
 }
