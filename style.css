@@ -163,3 +163,31 @@ footer {
         transform: translateY(0);
     }
 }
+
+@media (max-width: 768px) {
+    nav {
+        width: 100%;
+        padding: 10px;
+        border-radius: 0;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .blog-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-post {
+        width: 100%;
+    }
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-list li {
+        width: 100%;
+        text-align: center;
+    }
+}
