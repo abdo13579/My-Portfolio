@@ -45,13 +45,19 @@ nav a:hover {
 header {
     background: linear-gradient(135deg, #007bff, #003d80);
     color: white;
-    padding: 60px;
+    padding: 40px 20px;
     font-size: 40px;
     font-weight: bold;
     animation: fadeInDown 1s ease-in-out;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
 }
 
 /* تنسيق الأقسام */
@@ -133,6 +139,9 @@ p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     text-decoration: none;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 /* كروت المشاريع والمقالات */
@@ -182,6 +191,7 @@ a {
     transition: all 0.3s;
     text-decoration: none;
 }
+
 a:hover {
     transform: scale(1.1);
 }
@@ -193,9 +203,78 @@ footer {
     color: white;
     padding: 15px 0;
     margin-top: 30px;
+    width: 100%;
 }
+
 footer a {
     color: #90e0ef;
     text-decoration: none;
     margin: 0 10px;
 }
+
+/* Reset عام لكل العناصر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* للموبايل (أقل من 768px) */
+  @media only screen and (max-width: 768px) {
+    html, body {
+      width: 100%;
+      overflow-x: hidden; /* لمنع التمرير الأفقي */
+      font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+  
+    nav {
+        display: none;
+    }
+  
+    header {
+      width: 100%;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    section {
+      width: 100%;
+      max-width: 100%;
+      padding: 50px 20px;
+      margin: 10px auto;
+    }
+  
+    .projects {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .project {
+      width: 100%;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  
+    .blog-post {
+      width: 100%;
+      max-width: 90%;
+      padding: 30px;
+      margin: 0 auto;
+    }
+  
+    footer {
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    section:hover {
+        transform: translateY(0);
+    }
+  }
+  
