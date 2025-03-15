@@ -286,8 +286,8 @@ footer a {
         transform: translateY(0);
     }
     
-    .projects h2 {
-        margin: 20px auto;
+    #portfolio h2 {
+        padding-bottom: 30px
     }
 
   }
